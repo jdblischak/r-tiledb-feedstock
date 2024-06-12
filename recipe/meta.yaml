@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://dirk.eddelbuettel.com/tmp/tiledb_0.28.0.1.1.tar.gz
-  sha256: 663fd8af80f6d87442fb7abda7c7252c7eba480b6c448c92b4790b6874e21e9c
+  url: https://dirk.eddelbuettel.com/tmp/tiledb_0.28.0.1.2.tar.gz
+  sha256: b9eb80852010353386a082cd6d6a2540954e14ac9833828555a08a1766c06042
   patches:
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
     - 0002-as-posix-ct-for-4.2.patch
