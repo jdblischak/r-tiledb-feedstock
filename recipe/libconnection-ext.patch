@@ -1,0 +1,13 @@
+diff --git a/src/Makevars.in b/src/Makevars.in
+index a128332b..950998d8 100644
+--- a/src/Makevars.in
++++ b/src/Makevars.in
+@@ -8,7 +8,7 @@ PKG_CPPFLAGS = -I. -I../inst/include/ @CXX17_MACOS@ @TILEDB_INCLUDE@ @TILEDB_SIL
+ PKG_LIBS = @CXX17_MACOS@ @TILEDB_LIBS@ @TILEDB_RPATH@
+ 
+ LIB_CON_DIR = ../inst/lib$(R_ARCH)
+-LIB_CON = $(LIB_CON_DIR)/libconnection.so
++LIB_CON = $(LIB_CON_DIR)/libconnection.$(DYLIB_EXT)
+ 
+ all: $(OBJECTS) $(LIB_CON) $(SHLIB)
+         # if we are
