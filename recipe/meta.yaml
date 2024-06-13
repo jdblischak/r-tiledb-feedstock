@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: 8f7c6f46b76321acf11c3ba539af7ff04c9b4786f425ebf28f83cf2e327aa0f6
+  url: https://dirk.eddelbuettel.com/tmp/tiledb_0.28.0.1.4.tar.gz
+  sha256: d0a8c5d5616b4169d45c61836cdbd62292f65a02d78eaa886d5c5a0c68ebb508
   patches:
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
     - 0002-as-posix-ct-for-4.2.patch
@@ -31,7 +31,7 @@ source:
     #- undo-pr-710-src-makevars-win.patch  # [osx and not arm64]
     #- undo-pr-710-src-rcppexports-cpp.patch  # [osx and not arm64]
     #- undo-pr-710-src-virtualfile-cpp.patch  # [osx and not arm64]
-    - libconnection-ext.patch
+    #- libconnection-ext.patch
 
 build:
   number: 0
