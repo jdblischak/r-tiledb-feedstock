@@ -23,7 +23,8 @@ if [[ $target_platform  == osx-64 ]]; then
 fi
 
 $R -e "print(.Platform)"
-find $CONDA_PREFIX/lib/R -name '*.dylib*'
+cat $PREFIX/lib/R/etc/Makeconf
+find $PREFIX/lib/R -name '*.dylib*'
 
 ## Build a tarball and install from the tarball is the officially blessed way
 ## It has also respects the .Rbuildignore file allowing us to fine-tune
