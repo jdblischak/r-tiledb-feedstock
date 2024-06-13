@@ -10,7 +10,7 @@ source:
   sha256: d0a8c5d5616b4169d45c61836cdbd62292f65a02d78eaa886d5c5a0c68ebb508
   patches:
     - 0001-skip-osx-test-to-avoid-spurious-segfault.patch  # [osx and not arm64]
-    - 0002-as-posix-ct-for-4.2.patch
+    #- 0002-as-posix-ct-for-4.2.patch
     # Short-term patches to undo PR 710 (VFS-based read and write connections)
     # because the new libconnection.so broke the osx-64 builds
     #
